@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>顏色搭配工具</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header-title">顏色搭配工具</h1>
+        <p class="header-subtitle">選擇顏色，產生搭配色彩方案</p>
+    </header>
+
+    <main class="main-content">
+        <section class="color-picker-section">
+            <label class="color-label" for="base-color">選擇主色：</label>
+            <input type="color" id="base-color" class="color-input" value="#3498db">
+            <button class="generate-btn">產生搭配色</button>
+        </section>
+
+        <section class="palette-section">
+            <h2 class="palette-title">搭配色方案</h2>
+            <div class="palette-container">
+                <!-- 顏色卡片會由 JS 生成 -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 顏色搭配工具</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

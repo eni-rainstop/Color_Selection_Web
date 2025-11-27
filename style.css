@@ -1,0 +1,155 @@
+/* ===== Reset & Base ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Noto Sans TC", sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+/* ===== Header ===== */
+.header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.header-title {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.header-subtitle {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* ===== Main Content ===== */
+.main-content {
+    padding: 1rem;
+}
+
+/* Color Picker Section */
+.color-picker-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.color-label {
+    font-weight: 500;
+}
+
+.color-input {
+    width: 100px;
+    height: 50px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.generate-btn {
+    padding: 0.5rem 1rem;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.generate-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Palette Section */
+.palette-section {
+    text-align: center;
+}
+
+.palette-title {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.palette-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Color Cards */
+.color-card {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.8rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.color-card:hover {
+    transform: scale(1.1);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #999;
+}
+
+/* ===== RWD ===== */
+@media (min-width: 768px) {
+    .header-title {
+        font-size: 2rem;
+    }
+
+    .palette-container {
+        gap: 1.5rem;
+    }
+
+    .color-card {
+        width: 100px;
+        height: 100px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .main-content {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .color-card {
+        width: 120px;
+        height: 120px;
+        font-size: 1rem;
+    }
+}
